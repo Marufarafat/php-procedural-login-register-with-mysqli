@@ -1,0 +1,15 @@
+// adminSystem;
+CREATE TABLE users (
+	id MEDIUMINT NOT NULL AUTO_INCREMENT, 
+	firstName VARCHAR(64), 
+	lastName VARCHAR(64), 
+	userName VARCHAR(64), 
+	email VARCHAR(64), 
+	password TEXT, 
+	validationCode TEXT, 
+	active TINYINT(4) DEFAULT 0,
+	previlage TINYINT(4) DEFAULT 0, 
+	PRIMARY KEY(id)
+);
+
+INSERT INTO users(firstName, lastName, userName, email) VALUES('Maruf', 'Arafat', 'Arafat', 'mdarafat260714@gmail.com');
